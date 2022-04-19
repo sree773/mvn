@@ -2,7 +2,7 @@ pipeline {
     
     agent {label 'agent-node'}   
     environment{
-        PASS = credentials('scret')
+        PASS = credentials('sret')
     }
     stages {
         stage('Build') {
