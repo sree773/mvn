@@ -2,10 +2,10 @@ pipeline {
     
     agent {label 'agent-node'}   
     environment{
-        PASS = credentials('scret')
+        PASS = credentials('secret')
     }
     stages {
-        stage('Build') {
+        stage('11Build') {
             steps {
                 sh '''
                     ./jenkins/build/mvn.sh mvn -B -DkskipTests clean package
