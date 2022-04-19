@@ -1,10 +1,6 @@
 pipeline {
     
-    agent {
-        label{
-            agent-node
-        }
-    }    
+    agent label agent-node   
     environment{
         PASS = credentials('secret')
     }
